@@ -26,7 +26,7 @@ class Quadratic
 		}
 		else
 		{
-			System.out.println("The roots are real and distinct");
+			System.out.println("The roots are real and distinct!");
 			x1 = (((-b)+(Math.sqrt(d)))/(2*a));
 			x2 = (((-b)-(Math.sqrt(d)))/(2*a));
 			System.out.println("x1 =  "+x1);
