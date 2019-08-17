@@ -4,71 +4,58 @@ class Matrix
 	public static void main(String args[])
 	{
 		Scanner sc = new Scanner(System.in);
-		int i,j;
-		System.out.println("Enter the number of Rows and Columns in the Matrix 'A'");
-		int row1 = sc.nextInt();
-		int col1 = sc.nextInt();
-		System.out.println("Enter the number of Rows and Columns in the Matrix 'B'");
-		int row2 = sc.nextInt();
-		int col2 = sc.nextInt();
-		int a[][] = new int[row1][col1];
-		int b[][] = new int[row2][col2];
-		int c[][] = new int[row1][col1];
-		int d[][] = new int[row2][col2];
+		System.out.println("Enter Row and Column size of Matrix - A");
+		int r1 = sc.nextInt();
+		int c1 = sc.nextInt();
+		System.out.println("Enter Row and Column size of Matrix - B");
+		int r2 = sc.nextInt();
+		int c2 = sc.nextInt();
+		int a[][]=new int[r1][c1];
+		int b[][]=new int[r2][c2];
+		int sum[][]=new int[r1][c1];
+		int diff[][]=new int[r1][c1];
+		if(r1==r2 && c1==c2)
+		{
+			System.out.println("Enter the elements of Matrix - A");
+			for(int i=0;i<r1;i++)
+			{
+				for(int j=0;j<c1;j++)
+					a[i][j]=sc.nextInt();
+			}
+			System.out.println("Enter the elements of Matrix - B");
+			for(int i=0;i<r2;i++)
+			{
+				for(int j=0;j<c2;j++)
+				b[i][j]=sc.nextInt();
+			}
 			
-		System.out.println("Enter the elements of Array 'A'");
-		for(i=0;i<(row1);i++)
-		{
-			for(j=0;j<(col1);j++)
+			for(int i=0;i<r1;i++)
 			{
-				a[i][j] = sc.nextInt();
-			}
-		}
-		System.out.println("Enter the elements of Array 'B'");
-		for(i=0;i<(row2);i++)
-		{
-			for(j=0;j<(col2);j++)
-			{
-				a[i][j] = sc.nextInt();
-			}
-		}
-		if((row1 == row2) && (col1 == col2))
-		{
-			System.out.println("The Addition and Subtraction is possible!");
-			for(i=0;i<(row1);i++)
-			{
-				for(j=0;j<(col1);j++)
+				for(int j=0;j<c1;j++)
 				{
-					c[i][j] = ((a[i][j]) + (b[i][j]));
-				}
+					 sum[i][j]=a[i][j]+b[i][j];
+					 diff[i][j]=a[i][j]-b[i][j];
+				}		
 			}
-			System.out.println("The Addition of Array 'A' and Array 'B' is:");
-			for(i=0;i<(row1);i++)
+			System.out.println("The SUM of Matrices A and B is:\n");
+			for(int i=0;i<r1;i++)
 			{
-				for(j=0;j<(col1);j++)
-				{
-					System.out.println(c[i][j]);
-				}
+				for(int j=0;j<c1;j++)
+				System.out.print(sum[i][j]+" ");
+				System.out.print("\n");
 			}
-			for(i=0;i<(row1);i++)
+			System.out.println("The DIFFERENCE of Matrices A and B is:\n");
+			for(int i=0;i<r1;i++)
 			{
-				for(j=0;j<(col1);j++)
-				{
-					d[i][j] = ((a[i][j]) - (b[i][j]));
-				}
-			}
-			System.out.println("The Subtraction of Array 'A' and Array 'B' is:");
-			for(i=0;i<(row1);i++)
-			{
-				for(j=0;j<(col1);j++)
-				{
-					System.out.println(d[i][j]);
-				}
+				for(int j=0;j<c1;j++)
+				System.out.print(diff[i][j]+" ");
+				System.out.print("\n");
 			}
 		}
 		else
 		{
-			System.out.println("The Adition and Subtraction is not possible!!");
+			System.out.println("the Row size and Column size of matrix A and B should be same!!");
+			System.out.println("The SUM and DIFFERENCE is not possible!!");
 		}
 	}
 }
