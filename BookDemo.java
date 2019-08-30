@@ -53,9 +53,9 @@ class BookDemo{
 			page = sc.nextInt();
 			b[i].set(nam, aut, pr, page);
 		}
-		
+		System.out.println("\n\n\nThe book details are:");
 		for(int i=0;i<n;i++){
-			System.out.println("\n\n\nThe book details are:");
+			
 			System.out.println("Book "+(i+1)+":  "+b[i]);
 		}
 	}
