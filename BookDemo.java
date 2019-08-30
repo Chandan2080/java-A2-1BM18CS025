@@ -21,7 +21,7 @@ class Book {
 		System.out.print("\n\tBook price:\t"+price);
 		System.out.print("\n\tBook pages:\t"+num_pages);
 	}
-	 String toString(){
+	public String toString(){
 		String a = "\n\tBook name:\t";
 		String b = "\n\tBook Author:\t";
 		String c = "\n\tBook price:\t";
