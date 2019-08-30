@@ -60,3 +60,36 @@ class BookDemo{
 		}
 	}
 }
+
+
+/*OUTPUT:
+Enter the number of books:2
+
+
+Enter the book details:
+
+
+Book 1:	Book name?  bms
+	Book author?  BMS 
+	Book price?  100
+	Book pages?  200
+
+
+Book 2:	Book name?  123
+	Book author?  1234
+	Book price?  1234
+	Book pages?  1234
+
+
+
+The book details are:
+Book 1:  
+	Book name:	bms
+	Book Author:	BMS
+	Book price:	100
+	Book pages:	200
+Book 2:  
+	Book name:	123
+	Book Author:	1234
+	Book price:	1234
+	Book pages:	1234
