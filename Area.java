@@ -64,3 +64,35 @@ class Area{
 		}while(ch!=4);
 	}
 }
+//OUTPUT:
+/*
+1 : Area of Rectangle
+2 : Area of Circle
+3 : Area of Triangle
+4 : Exit
+Enter your choise:    1
+Enter the length:   10
+Enter the breadth:  20
+Area of Rectangle =   200
+1 : Area of Rectangle
+2 : Area of Circle
+3 : Area of Triangle
+4 : Exit
+Enter your choise:    3
+Enter the height of the Triangle:   15
+Enter the base length of the Triangle:   20
+Area of Triangle =   150.0
+1 : Area of Rectangle
+2 : Area of Circle
+3 : Area of Triangle
+4 : Exit
+Enter your choise:    2
+Enter the radius of the circle:    
+5
+Area of Circle =   78.5
+1 : Area of Rectangle
+2 : Area of Circle
+3 : Area of Triangle
+4 : Exit
+Enter your choise:    4
+*/
