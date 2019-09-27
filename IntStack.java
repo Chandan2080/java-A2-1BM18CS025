@@ -1,3 +1,10 @@
+//QUESTION:
+/*Design an interface named Stack with the following methods:
+a) push and pop elements from the stack
+b) check whether the stack is empty or not.
+Implement the stack with the help of arrays and if the size of the array becomes too small to hold the elements,
+create a new one. Test this interface by inheriting it in its subclass.
+*/
 import java.util.*;
 interface Stack{
 	void push();
