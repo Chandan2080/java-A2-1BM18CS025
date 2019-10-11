@@ -1,5 +1,11 @@
-/*Develop a Java program to create a class Bank that maintains two kinds of account for its customers, one called savings account and the other current account. The savings account provides compound interest and withdrawal facilities but no cheque book facility. The current account provides cheque book facility but no interest. Current account holders should also maintain a minimum balance and if the balance falls below this level, a service charge is imposed.
-Create a class Account that stores customer name, account number and type of account. From this derive the classes Curr-acct and Sav-acct to make them more specific to their requirements. Include the necessary methods in order to achieve the following tasks:
+/*Develop a Java program to create a class Bank that maintains two kinds of account for its customers,
+one called savings account and the other current account. The savings account provides compound interest
+and withdrawal facilities but no cheque book facility. The current account provides cheque book facility
+but no interest. Current account holders should also maintain a minimum balance and if the balance falls
+below this level, a service charge is imposed.
+Create a class Account that stores customer name, account number and type of account. From this derive the
+classes Curr-acct and Sav-acct to make them more specific to their requirements. Include the necessary methods
+in order to achieve the following tasks:
 Accept deposit from customer and update the balance.
 Display the balance.
 Compute and deposit interest
@@ -132,3 +138,77 @@ class BankDemo{
 		}
 	}
 }
+
+
+
+
+
+//OUTPUT-1:
+/*
+1 : Savings Account
+2 : Current Account
+What is your account type?	1
+
+
+Enter the customer name:	Chandan
+Enter the Account Number:	1234
+Enter the Account Balance:	100000
+
+1 : Deposit
+2 : Withdraw
+3 : Display the details
+4 : Calculate Interest
+5 : Exit
+Enter your choise:   1
+
+Enter the amount to be deposited:	100
+
+1 : Deposit
+2 : Withdraw
+3 : Display the details
+4 : Calculate Interest
+5 : Exit
+Enter your choise:   3
+Customer Name:	Chandan
+Account Number:	1234
+Accoutn Balance:	100100.0
+
+1 : Deposit
+2 : Withdraw
+3 : Display the details
+4 : Calculate Interest
+5 : Exit
+Enter your choise:   2
+
+Enter the amount to be withdrawed:	100
+
+1 : Deposit
+2 : Withdraw
+3 : Display the details
+4 : Calculate Interest
+5 : Exit
+Enter your choise:   3
+Customer Name:	Chandan
+Account Number:	1234
+Accoutn Balance:	100000.0
+
+1 : Deposit
+2 : Withdraw
+3 : Display the details
+4 : Calculate Interest
+5 : Exit
+Enter your choise:   4
+
+Enter the time (in years):	2
+
+The Rate of Interest is fixed as 3% per annum!!
+Interest:	6000.0Updated Balance:	106000.0
+1 : Deposit
+2 : Withdraw
+3 : Display the details
+4 : Calculate Interest
+5 : Exit
+Enter your choise:   5
+*/
+//OUTPUT-2:
+/*
